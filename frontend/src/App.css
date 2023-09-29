@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+
+.App {
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  /* background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center; */
+  background-color: #637081;
+  background-image: linear-gradient(315deg, #637081 0%, #7c98b3 74%);
+}
