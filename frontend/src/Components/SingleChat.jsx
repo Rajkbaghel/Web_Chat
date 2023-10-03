@@ -19,7 +19,6 @@ const SingleChat = ({ fetchAgain, setfetchAgain }) => {
           <Text
             fontSize={{ base: "28px", md: "30px" }}
             pb={3}
-            l
             px={2}
             w={"100%"}
             fontFamily={"Work Sans"}
