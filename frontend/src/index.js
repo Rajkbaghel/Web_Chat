@@ -11,7 +11,7 @@ root.render(
   <BrowserRouter>
     <ChatProvider>
       <ChakraProvider>
-        <App />
+        <App value={45} />
       </ChakraProvider>
     </ChatProvider>
   </BrowserRouter>

@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { ChatState } from "../Context/ChatProvider";
-import { Box, IconButton, Spinner, Text } from "@chakra-ui/react";
+import {
+  Box,
+  FormControl,
+  IconButton,
+  Input,
+  Spinner,
+  Text,
+} from "@chakra-ui/react";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import { getSender, getSenderFull } from "../config/ChatLogics";
 import ProfileModal from "./miscelleneous/ProfileModal";
@@ -57,7 +64,27 @@ const SingleChat = ({ fetchAgain, setfetchAgain }) => {
             h={"100%"}
             borderRadius={"lg"}
             overflowY={"hidden"}
-          ></Box>
+          >
+            {loading ? (
+              <Spinner
+                size={"xl"}
+                w={20}
+                h={20}
+                alignSelf={"center"}
+                margin={"auto"}
+              />
+            ) : (
+              <div></div>
+            )}
+            <FormControl isRequired mt={3}>
+              <Input
+                variant={"filled"}
+                border={"1px solid black"}
+                bg={"#E0E0E0"}
+                placeholder="Type here..."
+              ></Input>
+            </FormControl>
+          </Box>
         </>
       ) : (
         <Box
